@@ -2,8 +2,7 @@ const puppeteer = require('puppeteer');
 const _ = require('lodash');
 const Promise = require('bluebird'); 
 const log = console;
-const sizes = require('./sizes.json');
-const url = 'localhost:3000';
+const { sizes, url } = require('./config.json');
 
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
